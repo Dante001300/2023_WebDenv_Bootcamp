@@ -1,0 +1,11 @@
+li{
+    display:inline-block;
+    margin:0 10px;
+    /* 2 lines above is to make the <li> on the same line */
+    
+    float: left;
+    /* 1 line above is to make all text align to the left */
+
+    display: list-item;
+    /* line above allow bullintin to display for <ul> or 1 2 3.. for <ol> */
+}
