@@ -1,0 +1,105 @@
+<!--        FONT SIZE
+    1 px = 1/96th inch
+
+    1pt = 1/72 inch
+    
+    1em = 100% of parent
+     exmp:  <body> 20px
+                <h1>hello</h1> 1 em  this mean 1em = 20px as above // if 2em it's going to be 2*20=40px
+            </body>
+
+    1rem = 100% of root (root is enclose in the <html> </html>)
+    exmp: <html> 40px
+            <body> 20px
+                <h1>fasdf<h1> 1rem = 40px( not 20px)
+            </body>
+        </html>
+=========================================================================================================            
+        FONT FAMILY
+    font-family: Helvetica, sans-serif (sans-serif is backup in case other operation user does not regconize Helvetica)
+    font-family: "Time New Roman",
+
+https://fonts.google.com/  for using online font like from google add the link after the right before </html>
+
+<html>
+    <style>
+        h1{
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+    </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    
+    <body>
+        <h1>zzzzzzzzzzzzzzzzzzzzzzzz</h1>  this should display the "font-family"
+    </body>
+</html>
+======================================================================================================================
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Properties</title>
+  <style>
+    html{
+        font-size: 30px;
+    }
+    
+    body {
+      background-color: cornflowerblue;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* Don't change the CSS above, add Your CSS below */
+    #Color{
+        color: coral;
+    }
+
+    #font-size{
+        font-size: 2rem;
+    }
+
+    #weight{
+        font-weight: 900;
+        /* there is no px in font-weight */
+    }
+
+    #family{
+        font-family: 'Caveat', cursive;
+        }
+
+    #align{
+        text-align: right;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <h1>Important CSS Properties</h1>
+  <p id="Color">Color</p>
+  <p id="font-size">Font Size</p>
+  <p id="weight">Font Weight</p>
+  <p id="family">Font Family</p>
+  <p id="align">Text Align</p>
+
+  <!-- TODOs
+  1. Change the color of <p>Color</p> to "coral" color.
+  2. Change the font size of <p>Font Size</p> to 2X the size of the root font size.
+  3. Change the font weight of <p>Font Weight</p> to 900.
+  4. Change the font family of <p>Font Family</p> to the Google font Caveat with regular (400) font weight.
+  Link: https://fonts.google.com/specimen/Caveat
+  5. Change the <p>Text Align</p> to right align.
+  6. Change the the root (html element) font size to 30px -->
+</body>
+<!-- ----------------------------This is step 4-------------------------------------------- -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+<!-- ----------------------------This is step 4-------------------------------------------- -->
+</html>
