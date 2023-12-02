@@ -1,0 +1,45 @@
+/* Write your code here: */
+
+/*
+Group selector --> selector,selector{
+                    color: blue;}
+*/
+h1,h2{
+    color: blueviolet;
+}
+
+
+/* Child selector (a <div> inside another <div> [APPLY TO DIRECT CHILD ONLY]
+                    parentSelector > selector {
+                        color: red;}
+ */
+ .box > p{
+    color: firebrick;
+ }
+
+
+ /* Descendant Selector
+                        selector selector {
+                            color: red;}
+  */
+   .box li{  /*notice child selector doesn't work here because li is 2lv deep */
+    color: blue;
+  }
+
+
+  /* chaining selector = Apply where all selectors are true
+                        selectorselector{
+                            color:green;}
+   */
+   li.done{
+    color: seagreen;
+   }
+
+
+   /* combining combiners
+                            selector selectorselector{
+                                font-size:0.5rem;}
+    */
+    ul p.done{
+        font-size: 0.5rem;
+    }
