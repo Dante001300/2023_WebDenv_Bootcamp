@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+    .blue-box{
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      position: relative;
+      top: 200px;
+      left: 300px;
+    }
+
+    .red-circle{
+      height: 200px;
+      width: 200px;
+      background-color: red;
+      border-radius: 50%; /*this is how you create a circle with border radius */
+      position: absolute;
+      top: 150px;
+      left: 250px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- https://appbrewery.github.io/css-positioning/ -->
+<!-- positioning use top, right, left, bottom 
+1. static positioning: is a default position. right after whichever object it is
+2. relative positioning: Position relative to default position( relative position 
+takes the static position and move to the position it deisnged)
+3. absolute positioning: Position relative to nearest positioned ancestor
+or top left corners of webpage
+4. z-index: determine which element goes on top or bottom
+5. Fix positioning: Position relative to top left corners of browser window(doesn'
+matter when scroll up or down it will locates in the same spot) -->
