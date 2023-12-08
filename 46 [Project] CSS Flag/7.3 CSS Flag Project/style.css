@@ -1,0 +1,17 @@
+body{
+    background-color: red;
+    position: relative;
+    height: 600px;
+    width: 900px;
+}
+
+.blue-box{
+    background-color: blue;
+    position:static;
+    height: 50%;
+    width: 100%;
+}
+
+.flag{
+    text-align: center;
+}
