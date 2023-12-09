@@ -1,17 +1,40 @@
-body{
-    background-color: red;
-    position: relative;
-    height: 600px;
-    width: 900px;
-}
-
-.blue-box{
-    background-color: blue;
-    position:static;
-    height: 50%;
-    width: 100%;
-}
-
 .flag{
+    width: 900px;
+    height: 600px;
+    background-color: #ce1126;
+    position: relative;  
+/* because this is the parent so its position has to be relative, so
+we can set position to absolte in .blue */
+}
+
+.blue{
+    width: 100%;
+    height: 300px;
+    background-color: #002868;
+    position:absolute;
+    top: 150px; /*margin-top is not accurate here */
+    
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 350px;
+    top: 50px;
+}
+
+p{
+    margin: 0px;
+    /* the div around p will generate a margin of 1 so we will to eliminate it */
     text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.flag > div > div >p{
+/* flag is the parent, 1st decensd, 2nd and p */
+    color: black;
 }
