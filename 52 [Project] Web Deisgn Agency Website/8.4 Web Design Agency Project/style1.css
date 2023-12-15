@@ -30,6 +30,7 @@ footer {
 
 .card{
   width: 45%;
+  /* this is the space for text  in the row if the value is greater than 45% some shit will fuck up*/
 }
 
 .left{
@@ -47,7 +48,16 @@ footer {
 @media(max-width: 680px){
  
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  .logo{
+    width: 100px;
+  }
+ 
+  .card{
+    width: 100%; 
+    /* this will make the image to jump into the next row */
   }
 
 }
