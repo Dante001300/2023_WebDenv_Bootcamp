@@ -1,0 +1,107 @@
+https://appbrewery.github.io/flex-layout/    go here it will help alot
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+https://appbrewery.github.io/flexboxfroggy/   this is the exercise
+the goal is to move the frog to the circle
+
+1. flex children: is the element within the container(the parent)
+
+2. flex parent: the container the div 
+
+3. order: order of the element of the childrens
+    .green{ order: 1 or 2 3 4 5 6 the smallest go first the biggest go last}
+
+4. flex-warp: nowarp;[default setting of flex-warp] when you have to many items or the item is too big then 
+    it willl no go into the next line so that's when we need flex-warp 
+so to push the elements that don't have enough space to the next line use ---> flex-wrap: wrap;
+
+5. justify-content: flex-start; this one set on the parent container. Justify-content set the distribution 
+of the item along the main-axis
+    5.1.flex-start; the element will bunched up to the left basically it will stack from the left
+    5.2.flex-end; the element will bunch up to the end
+    5.3. center; center the element
+    5.4. space-between; space between the element evenly
+
+6. align-items: flex-start;  this will set the height of the container(the parent)
+    height: 70vh;
+    6.1. align-self: flex-start; align-self will separte the element from the parent
+
+7. align-content: center; only works if flex-wrap: wrap; is set to wrap
+    flex-wrap: wrap;
+    align-center:center;
+    height: 70vh;
+
+--------------------------------------------------intermidiate--------------------------------
+                            https://appbrewery.github.io/flexboxfroggy/ 
+1/24
+#pond {
+    display: flex;
+  justify-content: flex-end;
+  }
+
+2/24
+#pond {
+    display: flex;
+  justify-content:center;
+  }
+
+3/24
+#pond {
+    display: flex;
+  justify-content: space-around;
+  }
+
+4/24
+#pond {
+    display: flex;
+  justify-content:space-between;
+  }
+
+5/24
+#pond {
+    display: flex;
+  flex-wrap: wrap-reverse;
+  }
+
+6/24
+#pond {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+7/24
+#pond {
+    display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap-reverse;
+  }
+
+8/24
+#pond {
+    display: flex;
+  flex-direction: row-reverse;
+  }
+
+9/24
+#pond {
+    display: flex;
+  flex-direction: column;
+  }
+
+10/24
+#pond {
+    display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  }
+
+11/24
+#pond {
+    display: flex;
+  flex-direction: column;
+  justify-content: end;
+  }
+
+----------------the rest of the answers are here https://utsavmeena.com/flexbox-froggy-answers/-------------------
