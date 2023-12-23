@@ -1,0 +1,17 @@
+/* body{
+    background-color: red;
+} */
+
+.pricing-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    height: 100vh;  /* vh mean relative to viewport heigh so use it */
+}
+
+.pricing-plan{
+    background-color: #f2f2f2;
+
+}
+
