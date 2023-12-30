@@ -1,0 +1,24 @@
+https://appbrewery.github.io/grid-sizing/
+
+.grind-container{
+    display:grid;
+    grid-template-rows: 100px auto;  auto will automatically fill in the row to fit the smallest content    
+    grid-template-columns: 200px auto;  auto will autmatically fill in the column to fit the max column to 100%
+    grid-template: 100px 200px / 400px 800px  (this is a combination of both row and column this is equivalent of the 2 lines above)
+
+    grid-template-columns: 200px mimmax(400px, 800px) this set the limit of second columns at least 400px if there is not enough space and 800px if there is enough
+
+    grid-template-rows: repeat(2, 200px) this will repeat the row 200px 2 times
+
+    grid-auto-rows: 300px; is there is more item than anticipated it will automatically add new row of 300px for that item 
+}
+
+
+the exercise is the link above
+
+.grid-container {
+    display: grid;
+   grid-template-rows: 1fr 1fr 2fr;
+   grid-template-columns: auto 400px minmax(200px, 500px);
+   grid-auto-rows: 50px;
+   }
