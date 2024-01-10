@@ -1,0 +1,71 @@
+appbrewery.github.io/gridgarden/
+
+row of element or columns of element are called track
+
+.container{
+    height: 100vh; this will allow full screen
+    display:grid;
+    gap: 3rem; gap between each cell
+    grid-temmplate-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+exercise 1.
+
+.item {
+    font-size: 5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+    /* TODO: Use Flexbox to align the text to the center horizontally and vertically. 
+    See goal1 image.
+    */
+    solution below:
+    display: flex;
+    justify-contents: center; move to the middle(but still on top)
+    align-items: center;    move the item in the middle of the cell
+  }
+
+
+.cowboy {
+    background-color: blue;
+    grid-columns: span 2; combine 2 columns cells together
+the alternative way for the above code is to Use
+    grid-column-start:2;
+    grid-column-end: 3;
+go to inspect on browser and go to layout and check all boxes. Then go to element and click on grid to see
+grid cell number 1 2 3 4..etc
+}
+
+.astronaut {
+    order: 1; to make the astronaut has the hihgest order and push it to the end
+    grid-columns: span 2;
+
+another way to do this is to use grid-start and grid-column-end(this will give it the exact coordinate)
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+short hand for the 4 lines above
+    grid-area: 2 / 1 / 3 / 3;   row-start/ column-start / row-end / column-end
+
+}
+
+
+exercse 3
+
+.book {
+    background-color: #E58331;
+    /* Solution */
+    grid-area: 1 / 3 / 3 / 4
+    /* 
+    or
+    grid-area: 1 / 3 / -1 / -1 
+    
+    or
+    grid-row: span 2;
+    */
+  }
+
+  -------------------------------------appbrewery.github.io/gridgarden/-------------------------------------
+  
