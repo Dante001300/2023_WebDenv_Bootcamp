@@ -1,0 +1,64 @@
+appbrewery.github.io/bootstrap-layout/
+
+12 column system of bootstrap
+
+<div class="contrainer">
+    <div class="row">
+        <div class="column">hello</div>
+    </div>
+</div>
+
+using col-2 as class name: that means 2 columns out of 12
+same for col-4 = 4 columns out of 12 and col-6
+
+for example: 
+<div class="contrainer">
+    <div class="row">
+        <div class="col-2">hello</div>
+        <div class="col-4">hello</div>
+        <div class="col-6">hello</div>
+
+    </div>
+</div>
+
+dimension small >576px for mobile / medium >768 ipad / large >992 laptop / extra large 1200 desktop / extra extra large 1400 tv
+
+bootstrap breakpoint is basically @mediaQuery see the .img. If the width is <576px all the row will have 100% width
+
+-------------------------appbrewery.github.io/bootstrap-layout/----------------------------------
+
+-------------------------------------------------excerise 1--------------------------------------------
+
+<!-- Modify the HTML code for the purple boxes below so it behaves like the green ones. -->
+  <div class="row">
+    <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+if it's desktop, we know the size is zl and 50% is half so half of 12 is 6 hence --->  col-xl-6
+it's mobile; so it's small and 100% mean 12/12 hence ----> col-sm-12
+    <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+  </div>
+  
+  -------------------------------------------------excerise 2--------------------------------------------
+
+  <!-- Modify the HTML below to make the blue boxes behave like the red ones. -->
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 col-10">Column 1</div>
+    col-lg-6 is to make div turn into column instead of row
+    col-sm-12 is when the screen is narrower
+    col-10 is when the screen is the smallest
+    <div class="col-lg-3 col-sm-6 col-10">Column 2</div>
+    col-lg-3 is to make div turn into column instead of row
+    col-sm-6 is when the screen is narrower
+    col-10 is when the screen is the smallest
+    <div class="col-lg-3 col-sm-6 col-10">Column 3</div>
+    col-lg-3 is to make div turn into column instead of row
+    col-sm-6 is when the screen is narrower
+    col-10 is when the screen is the smallest
+  </div>
+
+  -------------------------------------------------excerise 3--------------------------------------------
+
+        <!-- Modify the HTML below to make the indigo boxes behave like the blue ones. -->
+        <div class="row">
+            <div class="col-xxl-1 col-xl-2 col-lg-4 col-md-6">Column 1</div>
+            <div class="col-xxl-11 col-xl-10 col-lg-8 col-md-6">Column 2</div>
+          </div>
