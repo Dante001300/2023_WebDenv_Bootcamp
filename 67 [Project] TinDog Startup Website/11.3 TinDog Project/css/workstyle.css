@@ -35,12 +35,17 @@
   .testimonial-logo-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 70px;
+    gap: 100px;
     height: auto;
   }
   .logo-size{
     height: 30px;
-    width: 250px;
+    width: auto;
+  }
+
+  .footer-change{
+    border: none;
+    margin-bottom: none;
   }
 
 
