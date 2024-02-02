@@ -32,12 +32,6 @@
     margin-bottom: 2px;
   }
   
-  .testimonial-logo-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 100px;
-    height: auto;
-  }
   .logo-size{
     height: 30px;
     width: auto;
@@ -47,6 +41,8 @@
     border: none;
     margin-bottom: none;
   }
+
+  
 
 
   /* .download-button{
