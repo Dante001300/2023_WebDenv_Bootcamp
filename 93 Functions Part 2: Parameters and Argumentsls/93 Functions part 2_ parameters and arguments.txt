@@ -1,0 +1,9 @@
+function getMilk(money) {
+console.log("go to the store");
+console.log("buy milk");
+var numberOfMilk = Math.floor(money/1.5);
+console.log("buy " + numberOfMilk + " bottle of milk");
+
+}
+
+getMilk(10);

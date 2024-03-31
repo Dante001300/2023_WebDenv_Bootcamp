@@ -1,0 +1,10 @@
+var name = prompt("what is your name?");
+
+var first_letter = name.slice(0,1);
+var other_letter = name.slice(1, name.length);
+
+//we need to declare first_letter and other_letter again otherwise it will return back to its original casing
+first_letter = first_letter.toUpperCase();
+other_letter = other_letter.toLowerCase();
+
+alert(("your name is ") + first_letter + other_letter);
