@@ -1,0 +1,43 @@
+<!-- Chrome html tree geenrator https://chromewebstore.google.com/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dante DOM  Document Object Model</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h1> Hello </h1>
+
+    <input type="checkbox">     
+
+    <button style=":active: color: red;"> Click me </button>
+    
+    <ul>
+        <li class="list">
+            <a href="https://google.com"> Google </a>
+        </li>
+
+        <li class="list"> Second </li>
+        <li class="list"> Third </li>
+    </ul>
+
+    <script src="./index.js" charset="UTF-8"> </script>
+</body>
+</html>
+
+
+<!-- we can also select element via class name ==> document.getElementsByClassName("classnamehere")
+also noticed getElements ==> is plural that means it will give back an array. -->
+
+<!-- we can also use get element by ID ==> document.getElementById();  ==> notice this is singular and not plural. -->
+
+<!-- another way to get element is with querySelector ==> document.querySelector("h1"); or
+document.querySelector("#byID");     //    document.querySelector(".byClass");  // -->
+
+<!-- to get multiple element with querySelector use ==> querySelectorAll ==> this will result in an array -->
+
+<!-- to change the color of google under li ===> document.querySelector("li a").style.color = "red"; -->
