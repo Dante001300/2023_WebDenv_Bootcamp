@@ -1,0 +1,45 @@
+<!-- Chrome html tree geenrator https://chromewebstore.google.com/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dante DOM  Document Object Model</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h1> Hello </h1>
+
+    <input type="checkbox">     
+
+    <button style=":active: color: red;"> Click me </button>
+    
+    <ul>
+        <li class="list">
+            <a href="https://google.com"> Google </a>
+        </li>
+
+        <li class="list"> Second </li>
+        <li class="list"> Third </li>
+    </ul>
+
+    <script src="./index.js" charset="UTF-8"> </script>
+</body>
+</html>
+
+<!-- inside chrome developer mode and console we can see the object of the html by using --> 
+<!-- document.firstElementChild.lastElementChild.firstElementChild            === this will result in the <h1> hello --> 
+
+<!-- we can also save the shortcut to the <h1> by storing line of code above into an variable as below -->
+    <!-- var heading = document.firstElementChild.lastElementChild.firstElementChild; -->
+<!-- we can also manupilate the heading <h1> using javascript by ===> heading.innerHTML = "good bye";  changing the heading from hello to goodbye -->
+
+
+<!-- we can also manupilate other element such as check box ==> document.querySelector("input").click();  this will click the checkbox -->
+
+<!-- we can also locate object using tagname ==> document.getElementsByTagName("li"); ==> this will give an array of li -->
+<!-- but because it's an array we have to choose which element in an array to manupilate   -->
+<!-- document.getElementsByTagName("li")[2].style.color = "purple"; -->
+
