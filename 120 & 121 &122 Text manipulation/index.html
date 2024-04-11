@@ -1,0 +1,47 @@
+<!-- we use .innerHTML to change the content, we can also use .textContent. But textContent only return the text and not
+    all the html
+-->
+
+<!-- we can also change the attribute of HTML, attributes are everything that go inside the tag
+    for example href, class, type are attribute and a,link,li are tag
+    
+    let say we want to change the link to google to bing using javascript we can do as follow
+    1. We need to find a link tag <a> by ==> document.querySelector("a");  
+    1.1 result: <a href=​"https:​/​/​google.com">​ Google ​</a>​
+    
+    2. Then we can get the attribute by using ===> document.querySelector("a").getAttribute("href");
+    2.2 result: 'https://google.com' is this link
+
+    3. Then we can alter the link with .setAttribute  ==> document.querySelector("a").setAttribute("href","https://www.bing.com");
+    3.3 then click on google and it will take you to bing
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dante DOM  Document Object Model</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h1> Hello </h1>
+
+    <a href="https://google.com"> Google </a>
+    <input type="checkbox">     
+    <button class="btn"> Click me </button>
+    
+    <ul>
+        <li class="list">
+            <a href="https://google.com"> Google </a>
+        </li>
+
+        <li class="list"> Second </li>
+        <li class="list"> Third </li>
+    </ul>
+
+    <script src="./index.js" charset="UTF-8"> </script>
+</body>
+</html>
