@@ -43,16 +43,45 @@
 // }
 //Above is the long way to do it we can do it with JQuery with fewer line of code
 
-$("button").click(function(){ //So now when click on any button H1 will change color to red
-    $("h1").css("color", "yellow");
-});
+// $("button").click(function(){ //So now when click on any button H1 will change color to red
+//     $("h1").css("color", "yellow");
+// });
 
-$("input").keypress(function (danteSeeEvent){ //input is the search bar in index.html
-    console.log(danteSeeEvent.key); //.key here is a method to detect key choke
-    var pressed_key = danteSeeEvent.key;
-    $("h1").text(pressed_key);
-});
+// $("input").keypress(function (danteSeeEvent){ //input is the search bar in index.html
+//     console.log(danteSeeEvent.key); //.key here is a method to detect key choke
+//     var pressed_key = danteSeeEvent.key;
+//     $("h1").text(pressed_key);
+// });
 
-$("h1").on("mouseover", function(){ // mouseover is a method when mouse is hover over h1 it will change color
-    $("h1").css("color", "green");
+// $("h1").on("mouseover", function(){ // mouseover is a method when mouse is hover over h1 it will change color
+//     $("h1").css("color", "green");
+// });
+
+
+//157------------------Adding and Removing Elements with JQuery------------------------------------
+
+// $("h1").before("<button>Before is outside h1</button>"); // this is to add a button before the h1 by using .before method
+// $("h1").prepend("<button>prepend is before h1 but still inside h1 element</button>");
+// $("h1").append("<button>append is after h1 but still inside h1 element</button>");
+// $("h1").after("<button>after is after h1 and is outside of h1 element</button>");
+// $("buttons").remove() // this will remove everything
+
+
+//158------------------Website animations with JQuery------------------------------------
+$("button").on("click", function(){
+    // $("h1").hide(); // this will hide the h1 when click on any buttons.
+    // $("h1").show(); // this will show the h1 when click on any buttons.
+    // $("h1").toggle(); // this will toggle between show and hide the h1 when click on any buttons.
+    // $("h1").fadeOut(); // this will slowly disappear
+    // $("h1").fadeIn(); // this will slowly reappear
+    // $("h1").fadeToggle(); // this will slowly fade in and out
+    // $("h1").slideUp(); // this will slide up
+    // $("h1").slideDown(); // this will slide down
+    // $("h1").slideToggle(); // this will slide toggle
+
+    // $("h1").animate({opacity: 0.5}); // custom css animation
+    //animate only take in numeric value for example animate({color: red will not work}) for animate to work the second
+    //input has to be a number value for example animate({margin: "20%"})
+
+    $("h1").slideUp().slideDown().animate({opacity: 0.5}); // we can also chain animation
 });
